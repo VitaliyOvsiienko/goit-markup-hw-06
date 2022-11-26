@@ -476,8 +476,37 @@
                         </ul>
 
                         </div>
+
+                        <div class="subscribe">
+                        
+                            <h3 class="subscribe-title">Підпишіться на розсилку</h3>
+
+                            <form>
+                            
+                                <label class="subscribe-label" for="footer-mail"></label>
+                                <input class="subscribe-input" type="email" name="mail" id="footer-mail" placeholder="E-mail">
+
+                            
+                                
+                                    <button class="subscribe-btn" type="submit">Підписатися
+                                    
+                                        <svg class="icon-send" width="24px" height="24px">
+                                            <use href="./images/icons.svg#icon-send"></use>
+                                        </svg>
+                                    
+                                    </button>
+                            
+
+                                   
+                        
+                            </form>
+                        
+                        
+                        </div>
             
                 </div>
+
+               
             
             
             </footer>
@@ -531,27 +560,24 @@
             <textarea class="modal-comment" name="comment" id="comment" placeholder="Введіть текст"></textarea>
         </div>
 
+        <div class="input-field">
 
-
-
-
-
-    <input type="checkbox" name="policy" id="policy">
-<label for="policy">Погоджуюся з розсилкою та приймаю Умови договору</label>
-
-
+            <input class="modal-check visually-hidden" type="checkbox" name="policy" id="policy">
+                <label class="check-text" for="policy">
+                    <span>
+                        <svg class="check-icon" width="16px" height="15px">
+                            <use href="./images/icons.svg#icon-check"></use>
+                        </svg>
+                    </span>
+                    Погоджуюся з розсилкою та приймаю <a class="policy-agreed" href="#">Умови договору</a>
+                </label>
+        </div>
+    
     <button class="btn-submit" type="submit">Відправити</button>
 
-
-</form>
-                </div>
-
+    </form>
+        </div>
             </div>
-
-            
-
-       
-
 
 
             <script src="./js/modal.js"></script>
