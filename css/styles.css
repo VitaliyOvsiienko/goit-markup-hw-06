@@ -949,6 +949,8 @@ img {
     transform: translateY(0);
 }
 
+                            /* Backdrop */
+
 
 .backdrop {
     
@@ -963,12 +965,17 @@ img {
     transition: opacity var(--anim-slow), visibility var(--anim-slow);
 }
 
+
+
+                            /* Modal */
+
 .modal {
     
     position: absolute;
     top: 50%;
     left: 50%;
     
+    padding: 40px;
 
     width: 100%;
     max-width: 528px;
@@ -981,7 +988,6 @@ img {
     transform: translate(-50%, -50%) scaleY(1);
 
     transition: transform var(--anim-slow);
-
     
 }
 
@@ -1053,8 +1059,8 @@ img {
     letter-spacing: var(--primery-letter-spacing);
     text-align: center;
 
-    padding-top: 40px;
-    margin-bottom: 30px;
+    
+    margin-bottom: 12px;
     
 }
 
@@ -1070,7 +1076,7 @@ img {
     line-height: 1.16;
     letter-spacing: 0.01em;
 
-    margin-left: 41px;
+
     margin-bottom: 4px;
 
 }
@@ -1084,9 +1090,6 @@ img {
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    padding-left: 42px;
-    margin-left: 41px;
-
     outline: transparent;
 
     transition: border-color var(--anim-slow);
@@ -1095,10 +1098,12 @@ img {
 
 
 .form-input:focus {
+    
     border-color: var(--primery-accent);
 }
 
 .form-input:focus + .modal-icon {
+    
     fill: var(--primery-accent);
 }
 
@@ -1107,7 +1112,7 @@ img {
     
     position: relative;
 
-    margin-bottom: 28px;
+    margin-bottom: 10px;
 
 }
 .modal-icon {
@@ -1117,7 +1122,7 @@ img {
     top: 50%;
     transform: translateY(-50%);
 
-    margin-left: 56px;
+    margin-left: 15px;
 
 }
 
@@ -1130,7 +1135,6 @@ img {
     resize: none;
     display: block;
 
-    margin-left: 41px;
 
    
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1138,8 +1142,6 @@ img {
 
     padding-left: 16px;
     padding-top: 12px;
-    padding-right: 16px;
-    padding-bottom: 12px;
 
     transition: border-color var(--anim-slow);
    
@@ -1182,7 +1184,7 @@ img {
     padding-right: 52px;
     padding-bottom: 10px;
     padding-left: 52px;
-    margin-bottom: 50px;
+
     
     transition: color var(--anim-slow), background-color var(--anim-slow), box-shadow var(--anim-slow);
 
@@ -1211,7 +1213,8 @@ img {
     align-items: center;
     justify-content: center;
     
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+
 
 }
 
@@ -1246,14 +1249,35 @@ img {
 
 .policy-agreed {
 
+    position: relative;
+
     color: var(--primery-accent);
     
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: var(--primery-letter-spacing);
     margin-left: 5px;
+    text-decoration: none;
 
 }
+
+.policy-agreed::after {
+
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    transform: translateY(-3px);
+    
+    width: 100%;
+    height: 1px;
+    background-color: var(--primery-accent);
+       
+
+}
+
+
 
 
 
@@ -1291,6 +1315,7 @@ img {
     border-radius: 4px;
     
     margin-right: 12px;
+    padding-left: 16px;
 
     transition: var(--anim-slow);
  
